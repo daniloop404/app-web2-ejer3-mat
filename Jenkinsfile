@@ -12,12 +12,8 @@ node {
     }
 
     //BORRAR CARPETA DEL HTML
-    // stage('Borrar'){
-    //     bat 'rd /s /q C:\\servidor\\fire'
-    // }
-
     stage('Limpiar'){
-        bat 'rd /Q C:\\servidor\\fire'
+        bat 'rd /s /q C:\\servidor\\fire'
     }
 
 
