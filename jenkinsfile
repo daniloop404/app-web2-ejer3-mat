@@ -1,0 +1,13 @@
+node {
+    stage('Revision'){
+        checkout scm
+    }
+
+    stage (){
+        bat 'npm install'
+    }
+
+    stage('Construir'){
+        bat 'npx ng build'
+    }
+}
